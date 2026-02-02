@@ -2,8 +2,20 @@
 <html>
 <head>
     <title>HMVC Test</title>
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
 </head>
 <body>
-    <h1>Ini Landing Page Garage Computer</h1>
+
+    <div class="m-10 p-10 bg-slate-900 rounded-xl shadow-2xl">
+        <h1 class="text-4xl font-extrabold text-teal-400 italic">
+            Tailwind Test: BERHASIL!
+        </h1>
+        <p class="mt-4 text-white font-medium">
+            Jika Anda melihat kotak gelap dengan teks biru muda yang miring, berarti konfigurasi Anda sudah benar.
+        </p>
+    </div>
+    <a href="#" class="mt-6 inline-block px-6 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-full transition-all cursor-pointer">
+    Tombol Hover Test
+    </a>
 </body>
 </html>

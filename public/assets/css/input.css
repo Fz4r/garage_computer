@@ -1,0 +1,9 @@
+@import "tailwindcss/preflight";
+/* @tailwind utilities; */
+
+
+@import "tailwindcss";
+
+/* Arahkan ke folder app dan modules */
+@source "../../app/Views/**/*.php";
+@source "../../modules/**/Views/**/*.php";
