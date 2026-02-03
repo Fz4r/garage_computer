@@ -1,7 +1,8 @@
 <?php
 
-// $routes->group('/', ['namespace' => 'Modules\Home\Controllers'], function($routes) {
-//     $routes->get('/', 'Home::index');
-// });
+// Routes untuk home page
+$routes->group('/', ['namespace' => 'Modules\Home\Controllers'], function($routes) {
+    $routes->get('', 'Home::index');
+});
 
-$routes->get('/', '\Modules\Home\Controllers\Home::index');
+// $routes->get('/', '\Modules\Home\Controllers\Home::index');

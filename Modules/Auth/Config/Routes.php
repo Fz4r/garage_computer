@@ -1,6 +1,9 @@
 <?php
-// $routes->group('admin', ['namespace' => 'Modules\Admin\Controllers'], function($routes) {
-    //     // $routes->get('users', 'Users::index');         // URL: domain.com/admin/users
-    // });
 
-$routes->get('auth', '\Modules\Auth\Controllers\Auth::index'); 
+// routes group untuk page login
+$routes->group('login', ['namespace' => 'Modules\Auth\Controllers'], function($routes) {
+    $routes->get('', 'Auth::login');
+    $routes->post('process', 'Auth::process'); // Untuk proses form nanti
+});
+
+// $routes->get('auth', '\Modules\Auth\Controllers\Auth::index'); 

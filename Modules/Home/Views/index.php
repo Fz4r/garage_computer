@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>HMVC Test</title>
-    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
-</head>
-<body>
+<?= $this->extend('layout/main') ?>
 
-    <div class="m-10 p-10 bg-slate-900 rounded-xl shadow-2xl">
-        <h1 class="text-4xl font-extrabold text-teal-400 italic">
-            Garage Computer
-        </h1>
-        <p class="mt-4 text-white font-medium">
-            Kami melayani berbagai macam kendala pada komputer anda
-        </p>
+<?= $this->section('content') ?>
+    <div class="bg-white p-10 rounded-2xl shadow-xl text-center">
+        <h1 class="text-4xl font-extrabold mb-4">Service Komputer Cepat & Handal</h1>
+        <p class="text-gray-600 mb-6">Selamat datang di dashboard Garage Computer. Kami siap membantu masalah hardware dan software kamu.</p>
+        <button class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold">Mulai Konsultasi</button>
     </div>
-    <a href="#" class="mt-6 inline-block px-6 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-full transition-all cursor-pointer">
-    Tombol Hover Test
-    </a>
-</body>
-</html>
+<?= $this->endSection() ?>

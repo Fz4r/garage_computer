@@ -43,7 +43,9 @@ class Autoload extends AutoloadConfig
 		APP_NAMESPACE => APPPATH, // For custom app namespace
 		'Config'      => APPPATH . 'Config',
 		// root untuk HMVC
-		'Modules'     => ROOTPATH . 'Modules',
+		'Modules\Home'  => ROOTPATH . 'Modules/Home',
+    	'Modules\Admin' => ROOTPATH . 'Modules/Admin',
+    	'Modules\Auth'  => ROOTPATH . 'Modules/Auth',
 	];
 
 	/**
