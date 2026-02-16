@@ -5,6 +5,13 @@
     <div class="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Login Garage</h2>
         
+        <!-- Notifikasi error user login -->
+        <?php if(session()->getFlashdata('msg')): ?>
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4">
+                <?= session()->getFlashdata('msg') ?>
+            </div>
+        <?php endif; ?>
+
         <form action="<?= base_url('login/process') ?>" method="POST" class="space-y-6">
             <?= csrf_field() ?> <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">Username</label>

@@ -13,8 +13,12 @@
         <a href="/" class="text-xl font-bold text-blue-600">Garage Computer</a>
         <div class="space-x-4">
             <a href="/" class="hover:text-blue-500">Home</a>
-            <a href="/admin" class="hover:text-blue-500">Admin</a>
-            <a href="/login" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Login</a>
+            <?php if(session()->get('isLoggedIn')): ?>
+                <a href="/admin" class="hover:text-blue-500 font-semibold">Admin Dashboard</a>
+                <a href="/logout" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">Logout (<?= session()->get('username') ?>)</a>
+            <?php else: ?>
+                <a href="/login" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Login</a>
+            <?php endif; ?>
         </div>
     </nav>
 
