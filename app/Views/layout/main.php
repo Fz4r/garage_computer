@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garage Computer</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="<?= base_url('js/tailwind.js') ?>"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
 
